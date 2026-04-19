@@ -1,0 +1,414 @@
+{
+  "users": [
+    {
+      "id": "5f850be0-1a2a-4388-834f-9419c3cf7aa2",
+      "name": "YALINA",
+      "email": "YALINA2212@GMAIL.COM",
+      "passwordHash": "$2b$10$RuBK2abPNj60Jkhol45LBuAJQmoVPLvjnixXkNfzcI4k8r9N8lGgq",
+      "university": "UEL",
+      "createdAt": "2026-04-16T08:22:47.695Z"
+    },
+    {
+      "id": "b5e46bfa-41c9-489b-9db1-beb23eaa550a",
+      "name": "UEL Demo",
+      "email": "student1776327789369@uel.ac.uk",
+      "passwordHash": "$2b$10$AoxeyASnFKyEJfOH3AHTA.gCihmNDXyIEwRwfIvGIBpjX0eWUTGzi",
+      "university": "UEL",
+      "createdAt": "2026-04-16T08:23:09.501Z"
+    },
+    {
+      "id": "9b6649f2-cc18-4ede-873f-091f420db186",
+      "name": "Admin UEL",
+      "email": "admin1776328098862@uel.ac.uk",
+      "passwordHash": "$2b$10$rcyP.csFgcHHJamgAbDE5.LTBM7A8kF4odCbOqsuP1dK18XExx9Gy",
+      "university": "UEL",
+      "role": "admin",
+      "createdAt": "2026-04-16T08:28:19.019Z"
+    },
+    {
+      "id": "226da11e-16d6-47ca-b592-eb4b060f91b2",
+      "name": "Admin X",
+      "email": "adminx1776328509812@uel.ac.uk",
+      "passwordHash": "$2b$10$hWf9.eXzs9BnlcFDHlBnWe7F76lPMSzTUDV46FgxzI9moE8ppI1aC",
+      "university": "UEL",
+      "role": "admin",
+      "createdAt": "2026-04-16T08:35:09.953Z"
+    },
+    {
+      "id": "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7",
+      "name": "Yalina",
+      "email": "yalina22@gmail.com",
+      "passwordHash": "$2b$10$ErO5CFt4oXOdhkXUZGMD/.JsSDgasq7rhYHS1eRfz8cpnQJwXgeq.",
+      "university": "UEL",
+      "role": "student",
+      "createdAt": "2026-04-16T14:22:23.883Z"
+    },
+    {
+      "id": "8cd9f460-bba4-4e8c-890f-7b2ba2ef075c",
+      "name": "UEL Admin",
+      "email": "admin@uel.local",
+      "passwordHash": "$2b$10$nrJzohlJM9vQ3yUUR8jqn.ajyly6tyhnvvSz0JTmDxsOZyALOWPFi",
+      "university": "UEL",
+      "role": "admin",
+      "createdAt": "2026-04-19T19:03:55.138Z"
+    },
+    {
+      "id": "4c22905d-35be-4274-a698-0e41c6047fc3",
+      "name": "Carol",
+      "email": "carol@uel.ac.uk",
+      "passwordHash": "$2b$10$DlBYSLLyzA1OPdBxi97ePer.XxH1oOYUctRU567HkOm9j01VY4z8C",
+      "university": "UEL",
+      "role": "student",
+      "createdAt": "2026-04-19T19:18:17.349Z"
+    }
+  ],
+  "preferences": {
+    "5f850be0-1a2a-4388-834f-9419c3cf7aa2": {
+      "selectedModule": "cn6001"
+    },
+    "b5e46bfa-41c9-489b-9db1-beb23eaa550a": {
+      "selectedModule": "programming"
+    },
+    "9b6649f2-cc18-4ede-873f-091f420db186": {
+      "selectedModule": "cn6100"
+    },
+    "226da11e-16d6-47ca-b592-eb4b060f91b2": {
+      "selectedModule": "programming"
+    },
+    "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7": {
+      "selectedModule": "cn6004",
+      "theme": "light"
+    },
+    "8cd9f460-bba4-4e8c-890f-7b2ba2ef075c": {
+      "selectedModule": "cn6000",
+      "theme": "light"
+    },
+    "4c22905d-35be-4274-a698-0e41c6047fc3": {
+      "selectedModule": "programming"
+    }
+  },
+  "sessions": [],
+  "modules": [
+    {
+      "id": "cn6000",
+      "academicYear": "2025/6",
+      "code": "CN6000",
+      "title": "Mental Wealth: Professional Life 3 (Project)",
+      "level": 6,
+      "term": 1,
+      "grade": null,
+      "status": "In Progress",
+      "assessments": [
+        "Project Material - Presentation/Project Plan (10 mins), Demonstration, Poster and Viva (25%)",
+        "Project Report (10,000 words) (75%)"
+      ]
+    },
+    {
+      "id": "cn6001",
+      "academicYear": "2025/6",
+      "code": "CN6001",
+      "title": "Enterprise Architecture and Cloud Computing",
+      "level": 6,
+      "term": 1,
+      "grade": null,
+      "status": "In Progress",
+      "assessments": [
+        "Continuous assessment with practical tasks and group case work (100%)"
+      ]
+    },
+    {
+      "id": "cn6004",
+      "academicYear": "2025/6",
+      "code": "CN6004",
+      "title": "Project Management",
+      "level": 6,
+      "term": 1,
+      "grade": 93,
+      "status": "Pass",
+      "assessments": [
+        "Coursework (2000 words) (50%)",
+        "Time-constrained assignment (1 hour) (50%)"
+      ]
+    },
+    {
+      "id": "cn6021",
+      "academicYear": "2025/6",
+      "code": "CN6021",
+      "title": "Advanced Topics in AI & Data Science",
+      "level": 6,
+      "term": 1,
+      "grade": null,
+      "status": "In Progress",
+      "assessments": [
+        "Group task + individual evaluation + presentation (100%)"
+      ]
+    },
+    {
+      "id": "cn6022",
+      "academicYear": "2025/6",
+      "code": "CN6022",
+      "title": "Big Data Infrastructure and Manipulation",
+      "level": 6,
+      "term": 1,
+      "grade": 88,
+      "status": "Pass",
+      "assessments": [
+        "Big Data project report (3000 words) + presentation (100%)"
+      ]
+    },
+    {
+      "id": "cn5000",
+      "academicYear": "2024/5",
+      "code": "CN5000",
+      "title": "Database Systems",
+      "level": 5,
+      "term": 1,
+      "grade": 87,
+      "status": "Pass",
+      "assessments": [
+        "Continuous assessment + presentation (100%)"
+      ]
+    },
+    {
+      "id": "cn5001",
+      "academicYear": "2024/5",
+      "code": "CN5001",
+      "title": "Business Intelligence Analysis",
+      "level": 5,
+      "term": 1,
+      "grade": 89,
+      "status": "Pass",
+      "assessments": [
+        "Group case-study solution tasks (100%)"
+      ]
+    },
+    {
+      "id": "cn5005",
+      "academicYear": "2024/5",
+      "code": "CN5005",
+      "title": "Data Structures and Algorithms",
+      "level": 5,
+      "term": 1,
+      "grade": 78,
+      "status": "Pass",
+      "assessments": [
+        "Continuous practical tasks (100%)"
+      ]
+    },
+    {
+      "id": "cn5009",
+      "academicYear": "2024/5",
+      "code": "CN5009",
+      "title": "Mental Wealth: Professional Life 2",
+      "level": 5,
+      "term": 1,
+      "grade": 84,
+      "status": "Pass",
+      "assessments": [
+        "Placement report + presentation + career development (100%)"
+      ]
+    },
+    {
+      "id": "cn5021",
+      "academicYear": "2024/5",
+      "code": "CN5021",
+      "title": "Programming for Data Science",
+      "level": 5,
+      "term": 1,
+      "grade": 92,
+      "status": "Pass",
+      "assessments": [
+        "Practical tasks + in-class test (100%)"
+      ]
+    },
+    {
+      "id": "cn5022",
+      "academicYear": "2024/5",
+      "code": "CN5022",
+      "title": "Artificial Intelligence",
+      "level": 5,
+      "term": 1,
+      "grade": 86,
+      "status": "Pass",
+      "assessments": [
+        "AI case practical + in-class test (100%)"
+      ]
+    },
+    {
+      "id": "cn4000",
+      "academicYear": "2023/4",
+      "code": "CN4000",
+      "title": "Information Systems Modelling and Design",
+      "level": 4,
+      "term": 1,
+      "grade": 91,
+      "status": "Pass",
+      "assessments": [
+        "Portfolio (100%)"
+      ]
+    },
+    {
+      "id": "cn4001",
+      "academicYear": "2023/4",
+      "code": "CN4001",
+      "title": "Software Development",
+      "level": 4,
+      "term": 1,
+      "grade": 98,
+      "status": "Pass",
+      "assessments": [
+        "Portfolio (100%)"
+      ]
+    },
+    {
+      "id": "cn4002",
+      "academicYear": "2023/4",
+      "code": "CN4002",
+      "title": "Computer Systems and Networks",
+      "level": 4,
+      "term": 1,
+      "grade": 84,
+      "status": "Pass",
+      "assessments": [
+        "Portfolio (100%)"
+      ]
+    },
+    {
+      "id": "cn4003",
+      "academicYear": "2023/4",
+      "code": "CN4003",
+      "title": "Web Technologies",
+      "level": 4,
+      "term": 1,
+      "grade": 93,
+      "status": "Pass",
+      "assessments": [
+        "Coursework (100%)"
+      ]
+    },
+    {
+      "id": "cn4004",
+      "academicYear": "2023/4",
+      "code": "CN4004",
+      "title": "Maths for Computing",
+      "level": 4,
+      "term": 1,
+      "grade": 81,
+      "status": "Pass",
+      "assessments": [
+        "Portfolio (100%)"
+      ]
+    },
+    {
+      "id": "cn4005",
+      "academicYear": "2023/4",
+      "code": "CN4005",
+      "title": "Mental Wealth: Professional Life 1 (IT Project Pitching)",
+      "level": 4,
+      "term": 1,
+      "grade": null,
+      "status": "Pass",
+      "assessments": [
+        "Portfolio (100%)"
+      ]
+    },
+    {
+      "id": "cn6100",
+      "academicYear": "2025/6",
+      "code": "CN6100",
+      "title": "Data Ethics and Governance",
+      "level": 6,
+      "term": 2,
+      "grade": null,
+      "status": "Planned",
+      "assessments": [
+        "Case study and policy draft (100%)"
+      ]
+    },
+    {
+      "id": "cn6101",
+      "academicYear": "2025/6",
+      "code": "CN6101",
+      "title": "Advanced Full Stack Systems",
+      "level": 6,
+      "term": 2,
+      "grade": null,
+      "status": "Planned",
+      "assessments": [
+        "Implementation project + viva (100%)"
+      ]
+    }
+  ],
+  "students": [],
+  "auditLogs": [],
+  "moodleConfig": {
+    "baseUrl": "",
+    "token": "",
+    "enabled": false
+  },
+  "notes": [
+    {
+      "id": "34e8915a-9f32-47ee-bd62-10fd68329eb9",
+      "userId": "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7",
+      "moduleId": "cn6000",
+      "week": 1,
+      "content": "--- Lecture summary (extractive) ---\nThis is an automatic skim of your PDF (no AI). It picks sentences that repeat important words — use it to see what to read first, then check the full PDF and your lecture notes.\n\nBig picture:\nLecture 1 Enterprise Architecture and Cloud Computing Introduction to Enterprise Architecture and Cloud Computing Dr Aloysius Edoh BEng (Elect),MSc (IT),MPhil (CS), PhD, PgCertHE, PgCertML, MBCS, MIET, MIEEE, MCITL, FHEA,; -- 1 of 40 -- Enterprise Architecture and Information systems Aim of Enterprise Architecture Concepts and principles of Enterprise Architecture System used in business applications.\n\n- -- 2 of 40 -- Enterprise Architecture Topics Types of Business Information System; Business Processes; Enterprise Architecture; TOGAF Principles of Enterprise Architecture service models; Distributed System models, and Object Client Server Framework (OCSF), AOA, SOA; COA Enterprise information Portal, integrated and middleware technologies / tools; Techniques for modelling and development of Software Enterprise Architecture (BPMN and UML); Information system development using TOGAF and Agile methodology; Enterprise Architecture modelling with Yworks Introduction to Cloud computing and Cloud infrastructure Enterprise Cloud computing (COA) and Service Oriented Architecture (SOA) Cloud Architecture with Azure and AWS systems AWS Data Engineering Development or simulation of web based portal applications using different software packages and or platforms; Cloud Economics and QoS Performance Analysis Cloud Architecture modelling and future Trends -- 3 of 40 -- Enterprise Architecture Module Assessment This is based on Continuous Assessment, a combination of individual Task submissions and TCA examination.\n\n- Main Assessment Portfolio Assessment - 100% Assessment components Part 1a, 1b and Part 2 Assessment Part 1- 60% Marking Attendance Part 1a Lab Tasks:- Lab practical exercises to be submitted online BPMN, AOA, AZURE and AWS Tasks 20% Part 1b Coursework:- Development of Web-based or Cloud based Systems with Cloud Architecture - Group Report (1500 words) 40% Assessment Part 2 - 40% TCA (75 mins) -- 4 of 40 -- Enterprise Architecture - Course work Coursework:- Select case study or scenario Use Agile and TOGAF principles to model the system as follows:- Business process model use BPMN Class diagram and data entity diagram (i.e., ERD) Enterprise Cloud Architecture modelling Group work:- development of web-based or cloud- based Enterprise Architecture task Evaluation Conclusion -- 5 of 40 -- The proposed Lab plan is shown below as: Lecture Plan 11-6 Week Number Lecture Topic 1 Module and assessment information overview - EA Introduction 2 Introduction to Cloud computing and Cloud infrastructure Part 1 3 Cloud Computing Part 2 4 EA Framework and modelling language - EA framework TOGAF 5 BPMN - modelling techniques BPMN - modelling techniques 6 System Development and implementation CSS - AOA and CI/CD 7 Cloud Computing AZURE Application and Labs.\n\n- Cloud Computing comprises several components that are loosely coupled Hence cloud architecture design is made up of components and subcomponents with the frontend of Cloud Computing architecture The Backend of the Cloud Computing architecture The Network and middle layer Cloud Computing- Middleware and Application -- 24 of 40 -- COA - Microsoft AZURE Cloud Modelling and Architecture Used for service migration,System Integration and Microsoft product Compatible Architecture of connection between On-premises and Microsoft Azure Cloud -- 25 of 40 -- MS Azure Cloud Operation Service platform Microsoft Azure Portal On the Portal you can build, manage and monitor your applications, software and web as well as Cloud applications in a single console Find Portal using :- https //portal.azure.com Then get a free account https://azure.microsoft.com/en-gb/features/azure-portal/ 1.\n\n- To select services use https://portal.azure.com/#create/hub Or Select Create a resource from the first screen and you can screen below ( https://portal.azure.com/#create/hub) -- 27 of 40 -- Amazon - AWS Cloud Computing deployment AWS Cloud Adoption Framework; From the-path-to-the-cloud-dec2015_AWS Mainly infrastructure services: AWS covers all the description of the web-based technology services Amazon provides Amazon Elastic Compute Cloud (EC2) Amazon Simple Storage Service (S3) Amazon Simple Queue Service (SQS) Amazon CloudFront Amazon SimpleDB AWS Databases Amazon Web Services -https://aws.amazon.com/articles/1632 -- 28 of 40 -- AWS Virtual Private Cloud -VPC Provides users a virtual private cloud, by \"providing a logically isolated section of Amazon Web Services (AWS) Cloud Gives control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.\n\n- Customer Supplier Check stock availability Confirm order Reject order Send invoice Ship goods Place purchase order Purchase order Order Rejection Notification Order confirmation notification Invoice Make payment Shipment notification -- 17 of 40 -- Examples with Pools, messages and Artifacts -- 18 of 40 -- Model for Enterprise Architecture Information Architecture Application Architecture Business Architecture Technology Architecture Business Model Business Direction Stakeholders Functions Information Data Model Information Flows Databases Applications Application Integration Application Technology Server Technology Network / Communications Platforms / Operating Systems Database Systems Security Technologies etc.",
+      "updatedAt": "2026-04-19T18:08:57.860Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "511196bd-c541-4122-9c3e-d23a6224ae4b",
+      "userId": "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7",
+      "title": "DOCUMENTATION",
+      "moduleId": "cn6100",
+      "week": null,
+      "dueDate": "2026-04-23",
+      "priority": "High",
+      "completed": true,
+      "createdAt": "2026-04-16T14:26:47.124Z",
+      "updatedAt": "2026-04-17T17:24:26.344Z"
+    },
+    {
+      "id": "e2c4b712-17d8-4d30-8383-eb33eede6897",
+      "userId": "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7",
+      "title": "MENTOD",
+      "moduleId": "cn4004",
+      "week": null,
+      "dueDate": "2026-04-19",
+      "priority": "Low",
+      "completed": true,
+      "createdAt": "2026-04-17T17:24:22.268Z",
+      "updatedAt": "2026-04-17T17:24:24.358Z"
+    }
+  ],
+  "weekMaterials": [
+    {
+      "id": "9b77271b-7f4f-4f30-9c6f-78bf92b23a6d",
+      "userId": "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7",
+      "moduleId": "cn6101",
+      "week": 1,
+      "storedName": "1776451163636-Practical_Lab_Task1_BPMN__2644408.pdf",
+      "originalName": "Practical Lab Task1 BPMN _2644408.pdf",
+      "createdAt": "2026-04-17T18:39:23.655Z"
+    },
+    {
+      "id": "661ecca3-bc57-44a8-8039-95c0480fea43",
+      "userId": "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7",
+      "moduleId": "cn6000",
+      "week": 1,
+      "storedName": "1776615521081-CN6001_CN5023__Lecture_1__Week_1_2026_FinalSubmitF1SS.pdf",
+      "originalName": "CN6001_CN5023  Lecture 1__Week 1_2026_FinalSubmitF1SS.pdf",
+      "createdAt": "2026-04-19T16:18:41.116Z"
+    },
+    {
+      "id": "fd243d01-7628-42bf-a433-97f1722de7be",
+      "userId": "e0ed8d95-cb6f-446f-b0a6-a29c130e4ef7",
+      "moduleId": "cn6001",
+      "week": 1,
+      "storedName": "1776617682937-CN6001_CN5023__Lecture_1__Week_1_2026_FinalSubmitF1SS.pdf",
+      "originalName": "CN6001_CN5023  Lecture 1__Week 1_2026_FinalSubmitF1SS.pdf",
+      "createdAt": "2026-04-19T16:54:43.304Z"
+    }
+  ]
+}

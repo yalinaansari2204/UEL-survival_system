@@ -1,0 +1,447 @@
+.mg-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--bg);
+}
+
+.mg-backdrop--static {
+  background: radial-gradient(ellipse 120% 80% at 50% 0%, var(--surface-2), var(--bg));
+}
+
+.mg-base {
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  background:
+    radial-gradient(ellipse 85% 65% at 12% 18%, color-mix(in srgb, var(--mesh-a) 55%, transparent), transparent 50%),
+    radial-gradient(ellipse 75% 58% at 90% 8%, color-mix(in srgb, var(--mesh-b) 48%, transparent), transparent 48%),
+    radial-gradient(ellipse 70% 52% at 48% 100%, color-mix(in srgb, var(--mesh-c) 52%, transparent), transparent 50%);
+}
+
+.mg-tri-grid {
+  position: absolute;
+  inset: -5%;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(115deg, color-mix(in srgb, var(--accent) 35%, transparent) 1px, transparent 1px),
+    linear-gradient(245deg, color-mix(in srgb, var(--accent) 28%, transparent) 1px, transparent 1px);
+  background-size: 52px 90px, 52px 90px;
+  animation: mg-tri-pan 42s linear infinite;
+}
+
+html[data-theme='dark'] .mg-tri-grid {
+  opacity: 0.38;
+}
+
+@keyframes mg-tri-pan {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 104px 180px, -104px -180px;
+  }
+}
+
+.mg-diagonal-stripes {
+  position: absolute;
+  inset: 0;
+  opacity: 0.14;
+  background: repeating-linear-gradient(
+    -32deg,
+    color-mix(in srgb, var(--mesh-b) 55%, transparent) 0 2px,
+    transparent 2px 14px
+  );
+  animation: mg-stripe-slide 28s linear infinite;
+}
+
+html[data-theme='dark'] .mg-diagonal-stripes {
+  opacity: 0.22;
+}
+
+@keyframes mg-stripe-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(56px);
+  }
+}
+
+.mg-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--accent);
+  opacity: 0.52;
+}
+
+html[data-theme='dark'] .mg-svg {
+  opacity: 0.62;
+}
+
+.mg-hex-shift {
+  animation: mg-hex-drift 50s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes mg-hex-drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-52px, -30px);
+  }
+}
+
+.mg-grid-shift {
+  animation: mg-grid-slide 32s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes mg-grid-slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-36px, -36px);
+  }
+}
+
+.mg-orbit {
+  transform-origin: 960px 540px;
+  animation: mg-orbit-spin 72s linear infinite;
+}
+
+@keyframes mg-orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mg-orbit--slow {
+  animation-duration: 118s;
+  animation-direction: reverse;
+}
+
+.mg-dash-flow {
+  stroke-dasharray: 22 16;
+  animation: mg-dash-march 11s linear infinite;
+}
+
+.mg-dash-flow--b {
+  animation-duration: 16s;
+  animation-direction: reverse;
+  opacity: 0.75;
+}
+
+@keyframes mg-dash-march {
+  to {
+    stroke-dashoffset: -220;
+  }
+}
+
+.mg-pulse-line {
+  animation: mg-pulse-op 4.5s ease-in-out infinite;
+}
+
+@keyframes mg-pulse-op {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.62;
+  }
+}
+
+.mg-brackets {
+  animation: mg-bracket-glow 6s ease-in-out infinite alternate;
+}
+
+@keyframes mg-bracket-glow {
+  0% {
+    opacity: 0.42;
+  }
+  100% {
+    opacity: 0.72;
+  }
+}
+
+.mg-blobs {
+  position: absolute;
+  inset: -15%;
+}
+
+.mg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(64px);
+  will-change: transform;
+}
+
+.mg-blob--1 {
+  width: 44vmin;
+  height: 44vmin;
+  left: -10%;
+  top: 6%;
+  background: color-mix(in srgb, var(--accent) 52%, transparent);
+}
+
+.mg-blob--2 {
+  width: 50vmin;
+  height: 50vmin;
+  right: -14%;
+  top: 18%;
+  background: color-mix(in srgb, var(--mesh-b) 58%, transparent);
+}
+
+.mg-blob--3 {
+  width: 58vmin;
+  height: 58vmin;
+  left: 14%;
+  bottom: -20%;
+  background: color-mix(in srgb, var(--mesh-c) 55%, transparent);
+}
+
+.mg-blob--4 {
+  width: 32vmin;
+  height: 32vmin;
+  right: 18%;
+  bottom: 10%;
+  background: color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.mg-rings {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mg-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  border: 2px solid color-mix(in srgb, var(--accent) 42%, transparent);
+  opacity: 0.48;
+  animation: mg-ring-spin 68s linear infinite;
+}
+
+.mg-ring--1 {
+  width: min(92vw, 980px);
+  aspect-ratio: 1;
+}
+
+.mg-ring--2 {
+  width: min(72vw, 760px);
+  aspect-ratio: 1;
+  animation-duration: 96s;
+  animation-direction: reverse;
+  border-color: color-mix(in srgb, var(--mesh-b) 48%, transparent);
+  opacity: 0.4;
+}
+
+.mg-ring--3 {
+  width: min(48vw, 500px);
+  aspect-ratio: 1;
+  animation-duration: 48s;
+  border-color: color-mix(in srgb, var(--mesh-c) 52%, transparent);
+  opacity: 0.46;
+}
+
+.mg-ring--4 {
+  width: min(28vw, 300px);
+  aspect-ratio: 1;
+  animation-duration: 34s;
+  animation-direction: reverse;
+  border: 2px dashed color-mix(in srgb, var(--accent) 55%, transparent);
+  opacity: 0.38;
+}
+
+@keyframes mg-ring-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.mg-wire-frames {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mg-wire-square {
+  position: absolute;
+  aspect-ratio: 1;
+  border: 2px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  border-radius: 4px;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--accent) 15%, transparent),
+    inset 0 0 24px color-mix(in srgb, var(--accent) 8%, transparent);
+  opacity: 0.55;
+}
+
+.mg-wire-square--ccw {
+  border-color: color-mix(in srgb, var(--mesh-b) 52%, transparent);
+  border-radius: 10px;
+}
+
+.mg-wire-diamond {
+  position: absolute;
+  width: min(16vw, 200px);
+  aspect-ratio: 1;
+  left: 42%;
+  bottom: 8%;
+  border: 2px solid color-mix(in srgb, var(--mesh-c) 55%, transparent);
+  border-radius: 3px;
+  opacity: 0.5;
+  box-shadow: 0 0 30px color-mix(in srgb, var(--mesh-c) 20%, transparent);
+}
+
+.mg-chips {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mg-chip {
+  position: absolute;
+  width: min(28vw, 360px);
+  height: 14px;
+  left: 12%;
+  top: 46%;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--accent) 22%, transparent),
+    transparent
+  );
+  opacity: 0.45;
+  animation: mg-chip-scan 9s ease-in-out infinite;
+}
+
+.mg-chip--b {
+  left: auto;
+  right: 10%;
+  top: 54%;
+  width: min(22vw, 280px);
+  animation-delay: 1.2s;
+  border-color: color-mix(in srgb, var(--mesh-b) 50%, transparent);
+}
+
+.mg-chip--c {
+  top: auto;
+  bottom: 26%;
+  left: 50%;
+  width: min(40vw, 520px);
+  margin-left: calc(min(40vw, 520px) / -2);
+  animation-delay: 2.4s;
+}
+
+@keyframes mg-chip-scan {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scaleX(0.92);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scaleX(1);
+  }
+}
+
+.mg-spark {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 85%, white);
+  box-shadow: 0 0 22px var(--glow);
+  opacity: 0.7;
+}
+
+.mg-conic-wrap {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: min(120vmin, 1400px);
+  height: min(120vmin, 1400px);
+  translate: -50% -50%;
+  pointer-events: none;
+  opacity: 0.18;
+}
+
+html[data-theme='dark'] .mg-conic-wrap {
+  opacity: 0.26;
+}
+
+.mg-conic {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    color-mix(in srgb, var(--accent) 55%, transparent),
+    color-mix(in srgb, var(--mesh-b) 45%, transparent),
+    color-mix(in srgb, var(--mesh-c) 50%, transparent),
+    color-mix(in srgb, var(--accent) 55%, transparent)
+  );
+  animation: mg-conic-spin 50s linear infinite;
+  mask: radial-gradient(circle, transparent 42%, black 44%, black 58%, transparent 62%);
+  -webkit-mask: radial-gradient(circle, transparent 42%, black 44%, black 58%, transparent 62%);
+}
+
+@keyframes mg-conic-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mg-veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    175deg,
+    color-mix(in srgb, var(--bg) 32%, transparent) 0%,
+    color-mix(in srgb, var(--bg) 12%, transparent) 42%,
+    color-mix(in srgb, var(--bg) 45%, transparent) 100%
+  );
+  pointer-events: none;
+}
+
+html[data-theme='dark'] .mg-veil {
+  background: linear-gradient(
+    175deg,
+    color-mix(in srgb, var(--bg) 58%, transparent) 0%,
+    color-mix(in srgb, var(--bg) 38%, transparent) 48%,
+    color-mix(in srgb, var(--bg) 68%, transparent) 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mg-tri-grid,
+  .mg-diagonal-stripes,
+  .mg-hex-shift,
+  .mg-grid-shift,
+  .mg-orbit,
+  .mg-orbit--slow,
+  .mg-dash-flow,
+  .mg-dash-flow--b,
+  .mg-pulse-line,
+  .mg-brackets,
+  .mg-ring,
+  .mg-chip,
+  .mg-conic {
+    animation: none !important;
+  }
+}
